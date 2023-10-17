@@ -4,11 +4,12 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: #DF7AA7;
   background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+  
 }
 
 #root {
@@ -19,6 +20,7 @@
   padding: 2rem;
   text-align: center;
   gap: 2em;
+  align-items: center;
 }
 #root img{
   cursor: pointer;
@@ -32,7 +34,6 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
-
 /* Keyframes */
 @keyframes rotate {
   from {
@@ -42,13 +43,75 @@ body {
     transform: rotate(360deg);
   }
 }
-
+/* Div TetardCoinAdd */
+div.TetardCoinAdd{
+width: 1280px;
+height: 250px;
+}
 img.TetardCoinImg {
- animation: rotate 10s infinite;
- scale: 1;
+ animation: rotate 7s infinite;
+ scale: 3;
+}
+img.TetardCoinImg:active {
+  scale: 3.6;
+ }
+
+/* div.TetardCoin  */
+div.tetardCoin {
+  width: 200px;
+  background-color: #504F55;
+  border: #DF7AA7;
+  border-radius: 5px;
 }
 
-img.TetardCoinImg:active {
-  scale: 1.2;
- }
- 
+/* div.clickerZ */
+div.clickerZ {
+  display: flex;
+  width: 400px;
+  border-radius: 5px;
+  background-color: #504F55;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+}
+div.clickerZ > h2 {
+  font-size: 2em;
+  background-color: #242424;
+  border-radius: 5px;
+  width: 275px;
+}
+div.clickerZ > h3 {
+  font-size: 2em;
+  background-color: #242424;
+  border-radius: 5px;
+  width: 150px;
+}
+img.TetardCoinClick {
+  scale: 100%;
+}
+img.TetardCoinClick:hover {
+  scale: 85%;
+}
+
+/* div.amelio */
+div.amelio {
+  display: flex;
+  width: 400px;
+  height: 300px;
+  gap: 15px;
+  background-color: #504F55;
+  border-radius: 5px;
+  flex-direction: column;
+}
+
+
+/* FOOTER */
+footer {
+  color: #DF7AA7;
+  background-color: #CAE472;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+}

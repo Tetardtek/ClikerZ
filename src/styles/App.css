@@ -49,10 +49,11 @@ width: 1280px;
 height: 250px;
 }
 img.TetardCoinImg {
- animation: rotate 7s infinite;
+ animation: rotate 7s reverse infinite;
  scale: 3;
 }
 img.TetardCoinImg:active {
+  animation: rotate .5s infinite;
   scale: 3.6;
  }
 
